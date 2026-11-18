@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="cabecalho" id="menu">
+    <a href="index.html" class="logo">MEU PORTFÓLIO<span>.</span></a>
+
+    <nav class="menu">
+        <a href="quemsoueu.html">Quem sou eu</a>
+        <a href="login.html">🔒</a>
+    </nav>
+</header>
+
+<main class="area-login">
+    <section class="login-card">
+
+        <p class="subtitulo">ÁREA RESTRITA</p>
+        <h1>Bem-vindo!</h1>
+        <p>Entre com seu e-mail e senha.</p>
+
+        <form id="formLogin">
+            <label for="usuario">E-mail</label>
+            <input type="email" id="usuario"
+                placeholder="Digite seu e-mail" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha"
+                placeholder="Digite sua senha" required>
+
+            <button type="submit">ENTRAR</button>
+        </form>
+
+        <p id="mensagem" class="mensagem"></p>
+
+        <p class="texto-cadastro">
+            Ainda não tem conta?
+        </p>
+
+        <button type="button" id="botaoCadastro">
+            CRIAR CONTA
+        </button>
+
+    </section>
+</main>
+
+<footer class="rodape">
+    <p>© 2026 · Feito por <a href="#menu">@seunome</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="java.js"></script>
+
+</body>
+</html>
+

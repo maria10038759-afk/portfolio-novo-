@@ -1,0 +1,329 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo: #17191b;
+    --fundo-claro: #202326;
+    --bege: #c9b995;
+    --branco: #f4f0e8;
+    --cinza: #aaa9a5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--fundo);
+    color: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    width: 100%;
+    min-height: 85px;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #35383a;
+}
+
+.logo {
+    color: var(--branco);
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--bege);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    color: var(--bege);
+}
+
+.link-cadeado {
+    font-size: 19px !important;
+}
+
+/* PÁGINA INICIAL */
+
+.principal {
+    flex: 1;
+    min-height: 75vh;
+    padding: 100px 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.subtitulo {
+    color: var(--bege);
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.apresentacao h1,
+.conteudo-quem h1 {
+    font-size: clamp(38px, 6vw, 68px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.apresentacao h1 span,
+.conteudo-quem h1 span {
+    color: var(--bege);
+}
+
+.descricao {
+    color: var(--cinza);
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 520px;
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+    width: fit-content;
+    padding: 16px 28px;
+    background: var(--bege);
+    color: var(--fundo);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: var(--branco);
+    transform: translateY(-3px);
+}
+
+.detalhe {
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 90px;
+}
+
+/* QUEM SOU EU */
+
+.pagina-quem {
+    flex: 1;
+    padding: 100px 12%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.conteudo-quem p:not(.subtitulo) {
+    color: var(--cinza);
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+.conteudo-quem strong {
+    color: var(--bege);
+}
+
+.linha-decorativa {
+    width: 65px;
+    height: 3px;
+    background: var(--bege);
+    margin-bottom: 35px;
+}
+
+.cartao-lateral {
+    background: var(--fundo-claro);
+    border: 1px solid #393b3c;
+    padding: 40px 30px;
+}
+
+.numero {
+    color: var(--bege);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cartao-lateral h2 {
+    font-size: 21px;
+    margin: 25px 0 12px;
+}
+
+.cartao-lateral p {
+    color: var(--cinza);
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* LOGIN */
+
+.area-login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--fundo-claro);
+    border: 1px solid #393b3c;
+    padding: 40px;
+}
+
+.login-card h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.login-card > p {
+    color: var(--cinza);
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.login-card label {
+    display: block;
+    margin: 18px 0 9px;
+    font-size: 13px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #484b4d;
+    background: var(--fundo);
+    color: var(--branco);
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: var(--bege);
+}
+
+.login-card button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border: none;
+    background: var(--bege);
+    color: var(--fundo);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mensagem {
+    margin-top: 20px;
+    color: var(--bege);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* PÁGINAS EM CONSTRUÇÃO */
+
+.em-construcao {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.em-construcao h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.em-construcao p {
+    color: var(--cinza);
+    line-height: 1.8;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    padding: 25px;
+    border-top: 1px solid #35383a;
+    text-align: center;
+}
+
+.rodape p {
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+.rodape a {
+    color: var(--bege);
+    text-decoration: none;
+}
+
+/* CELULAR E TABLET */
+
+@media (max-width: 700px) {
+    .cabecalho {
+        padding: 22px 5%;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .menu {
+        gap: 18px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .principal {
+        padding: 80px 8%;
+    }
+
+    .pagina-quem {
+        padding: 70px 8%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .cartao-lateral {
+        padding: 30px;
+    }
+}
